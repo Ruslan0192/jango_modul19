@@ -33,8 +33,12 @@ def sign_up_by_html(request):
 
         # проверка на совпадение login пользователей
         # загрузка из базы
-        # buyer = Buyer.filter(username=username)
-        # if buyer != None:
+
+        # выполнение ДЗ по администрированию
+        buyer = Buyer.filter(username=username)
+        if buyer != None:
+            return HttpResponse('Пользователь с таким login уже существует!')
+
 
         try:
             buyer = Buyer.objects.get(username=username)
@@ -51,7 +55,6 @@ def sign_up_by_html(request):
             )
 
             # return HttpResponse(f'Успешная регистрация! Приветствуем, {username}')
-            # return render(request, 'main.html')
             return redirect('/main/')
 
         except MultipleObjectsReturned:

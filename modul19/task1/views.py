@@ -36,7 +36,7 @@ def sign_up_by_html(request):
 
         # выполнение ДЗ по администрированию
         buyer = Buyer.filter(username=username)
-        if buyer != None:
+        if len(buyer) != 0:
             return HttpResponse('Пользователь с таким login уже существует!')
 
 

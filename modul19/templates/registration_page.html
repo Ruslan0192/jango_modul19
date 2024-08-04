@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+  </head>
+<head>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+<body>
+    <h1>Добро пожаловать в «Форму регистрации»!</h1>
+    <p>Пожалуйста, заполните эту форму с необходимой информацией</p>
+
+      <fieldset>
+        <label>Введите login: <input type="text" name="username" required/></label>
+        <label>Введите Ваше Имя: <input type="text" name="first_name" required/></label>
+        <label>Введите Фамилию: <input type="text" name="last_name" required/></label>
+        <label>Введите свой Email: <input type="email" name="email" required/></label>
+        <label>
+          Создать пароль (не менее 8 символов, в формате: a-z0-9):
+          <input type="password" name="password1" pattern="[a-z0-9]{8,}" required/>
+          Повтор пароля:
+          <input type="password" name="password2" pattern="[a-z0-9]{8,}" required/>
+          {% if password1 != password2 %}
+          <h3>Пароли не совпадают</h3>>
+          {%endif%}
+        </label>
+
+
+        <label>
+          <input type="checkbox" name="terms" class="inline" required />
+          <a>Я принимаю условия и положения</a>
+        </label>
+
+        <label>
+            Введите свой возраст (количество лет):
+          <input type="number" name="age"  />
+        </label>
+
+        <label>
+           Баланс счета (в рублях):
+          <input type="number" step="0.01" name="balance"  />
+        </label>
+
+      </fieldset>
+      <input type="submit" value="Отправить"/>
+</body>
+  </form>

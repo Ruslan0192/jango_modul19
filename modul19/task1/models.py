@@ -5,9 +5,13 @@ from django.db import models
 
 
 class Buyer(models.Model):
-    name = models.CharField(max_length=250)
+    username = models.CharField(max_length=100)
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    email = models.CharField(max_length=100)
+    age = models.PositiveIntegerField()
+    password = models.CharField(max_length=100)
     balance = models.DecimalField(max_digits=20, decimal_places=2)
-    age = models.IntegerField()
 
 
 class Game(models.Model):

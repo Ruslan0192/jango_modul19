@@ -17,11 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-# from task1.views import index, index1, menu
+from . import views
+# from views import *
 
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('task1.urls')),
+    # path('', views.sign_up_by_django),
+    path('', views.sign_up_by_html),
+    path('main/', views.main),
+    path('page2/', views.page2),
+    path('page3/', views.page3),
+
 ]

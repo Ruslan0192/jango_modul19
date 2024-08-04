@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %} Моя страница {%endblock %} </title>
+</head>
+<body>
+    <header>
+        {% block pagename %}
+        <h1> Главная страница </h1>>
+        {% endblock %}
+    </header>
+
+    <nav>
+        {% block menu %}
+        <h3>Главная <a href="http://127.0.0.1:8000/main/"> Перейти </a> </h3>
+        <h3>Магазин <a href="http://127.0.0.1:8000/page2/"> Перейти </a> </h3>
+        <h3>Корзина <a href="http://127.0.0.1:8000/page3/"> Перейти </a> </h3>
+        {% endblock %}
+    </nav>
+
+    <content>
+        {% block content %}
+        <p> тут будет описание товара </p>>
+        {% endblock %}
+    </content>
+
+</body>
+
+</html>

@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ef9888f-6245-4ec5-8e4c-5415a7252fc2" name="Changes" comment="admin">
-      <change afterPath="$PROJECT_DIR$/modul19/task1/migrations/0003_alter_buyer_age.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modul19/templates/111.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modul19/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modul19/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modul19/task1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/task1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modul19/task1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/task1/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modul19/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modul19/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/templates/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modul19/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/templates/pagination.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/modul19/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/modul19/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +49,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
-    "Python.Run_django.executor": "Debug",
+    "Python.Run_django.executor": "Run",
     "Python.main.executor": "Run",
     "Python.manage.executor": "Run",
     "Python.urls.executor": "Run",
@@ -186,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722801684323</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="admin">
+      <option name="closed" value="true" />
+      <created>1723735195454</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723735195454</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

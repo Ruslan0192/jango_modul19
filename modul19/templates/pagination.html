@@ -1,0 +1,52 @@
+
+    {% if page_obj.has_previous %}
+      <li><a href="?page={{ page_obj.previous_page_number }}">(Prev)</a></li>
+
+      {% if page_obj.number > 3 %}
+          <li><a href="?page=1">(1)</a></li>
+        {% if page_obj.number > 4 %}
+          <li><a >...</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+
+    {% for num in page_obj.paginator.page_range %}
+      {% if page_obj.number == num %}
+          <li><a href="?page={{ num }}">({{ num }})</a></li>
+      {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <li><a href="?page={{ num }}">({{ num }})</a></li>
+      {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+      {% if page_obj.number < page_obj.paginator.num_pages|add:'-3' %}
+        <li><a >...</a></li>
+        <li><a href="?page={{ page_obj.paginator.num_pages }}">
+          ({{ page_obj.paginator.num_pages }})
+        </a></li>
+      {% elif page_obj.number < page_obj.paginator.num_pages|add:'-2' %}
+        <li><a href="?page={{ page_obj.paginator.num_pages }}">
+          ({{ page_obj.paginator.num_pages }})
+        </a></li>
+      {% endif %}
+
+      <li><a href="?page={{ page_obj.next_page_number }}">(Next)</a></li>
+    {% endif %}
+
+
+<form method="post">
+    {% csrf_token %}
+    <table>
+        <p>
+            <select name="paginate_by" onchange = "this.form.submit();">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+            </select>
+        </p>
+<!--        <input type="submit" value="Submit"/>-->
+    </table>
+</form>
+
+

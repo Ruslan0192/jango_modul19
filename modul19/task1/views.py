@@ -1,4 +1,7 @@
+import random
+
 from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.views.generic import TemplateView
 from django.http import HttpResponse
@@ -118,26 +121,43 @@ def sign_up_by_html(request):
 #         # Если это запрос Get
 #     return render(request, 'registration_page.html')
 
+class HomePageView():
+    # model = Syslog
+    template_name = 'main.html'
+    context_object_name = 'all_logs'
+    paginate_by = 10
+
+    def get_paginate_by(self, queryset):
+        return self.request.GET.get("paginate_by", self.paginate_by)
+
 
 def main(request):  # По умолчанию все функции принимают запрос от польз-ля на получение информации и страницы
 
     link1 = 'Главная'
     link2 = 'Магазин'
     link3 = 'Корзина'
-    # list = ['Atomic Heart', 'Cyberpunk 2077', 'PayDay 2']
-    list = []
-    games = Game.objects.all()
 
+
+    per_page = 10
+    if "paginate_by" in request.POST:
+        per_page = request.POST["paginate_by"]
+
+
+
+    games = Game.objects.all()
+    paginator = Paginator(games, per_page)
+    page_number = request.GET.get('page', 1)
+    page_obj = paginator.page(page_number)
     context = {
         'link1': link1,
         'link2': link2,
         'link3': link3,
-        'games': games,
+        'per_page': per_page,
+        'page_obj': page_obj,
     }
 
-    # возвращает функцию render, импортированную по умолчанию в django
-    return render(request, 'main.html', context)
 
+    return render(request, 'main.html', context=context)
 
 def page2(request):
     link1 = 'Главная'
@@ -154,6 +174,7 @@ def page2(request):
 
 
 def page3(request):
+
     link1 = 'Главная'
     link2 = 'Магазин'
     link3 = 'Корзина'
@@ -167,5 +188,17 @@ def page3(request):
     }
     # Напишем переменную, передающую имя корзины:
     return render(request, 'page3.html', context)
+
+def create_game():
+    # временная функция для заполнения БД данными
+    for i in range(1000):
+        Game.objects.create(
+            title=f'Game{i}',
+            cost=10,
+            size=20,
+            description=f'Game{i}_description',
+            age_limited=False,
+        )
+
 
 

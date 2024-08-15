@@ -24,8 +24,8 @@ from . import views
 
 urlpatterns = [
     # path('', views.sign_up_by_django),
-    path('', views.sign_up_by_html),
-    path('main/', views.main),
+    path('reg/', views.sign_up_by_html),
+    path('', views.main),
     path('page2/', views.page2),
     path('page3/', views.page3),
 

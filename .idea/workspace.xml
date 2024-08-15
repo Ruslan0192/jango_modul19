@@ -1,34 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ef9888f-6245-4ec5-8e4c-5415a7252fc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="8ef9888f-6245-4ec5-8e4c-5415a7252fc2" name="Changes" comment="admin">
+      <change afterPath="$PROJECT_DIR$/modul19/task1/migrations/0003_alter_buyer_age.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modul19/templates/111.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modul19/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/task1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/task1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/task1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/task1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/templates/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modul19/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/modul19/templates/pagination.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ruslan0192" />
+        <option value="Ruslan" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="5e8ba351-ea00-4d49-a65c-764085f7b3b1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2k6Sx30IlX7Mwa5c9UVIeEqf96p" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.Run_django.executor": "Debug",
+    "Python.main.executor": "Run",
+    "Python.manage.executor": "Run",
+    "Python.urls.executor": "Run",
+    "Python.views.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Ruslan/PycharmProjects/Jango_project_modul19/modul19/manage.py",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Run_django">
+    <configuration name="Run_django" type="PythonConfigurationType" factoryName="Python">
+      <module name="Jango_project_modul19" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10 (Jango_project_modul19)" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Ruslan\PycharmProjects\Jango_project_modul19\modul19" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modul19/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Jango_project_modul19" />
       <option name="ENV_FILES" value="" />
@@ -51,6 +117,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Run_django" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -68,7 +138,76 @@
       <option name="presentableId" value="Default" />
       <updated>1722602776175</updated>
     </task>
+    <task id="LOCAL-00001" summary="Database">
+      <option name="closed" value="true" />
+      <created>1722611451453</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722611451453</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Database">
+      <option name="closed" value="true" />
+      <created>1722611621652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722611621652</updated>
+    </task>
+    <task id="LOCAL-00003" summary="querySet">
+      <option name="closed" value="true" />
+      <created>1722617861120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722617861120</updated>
+    </task>
+    <task id="LOCAL-00004" summary="MVT">
+      <option name="closed" value="true" />
+      <created>1722796358107</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722796358107</updated>
+    </task>
+    <task id="LOCAL-00005" summary="admin">
+      <option name="closed" value="true" />
+      <created>1722801330976</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722801330976</updated>
+    </task>
+    <task id="LOCAL-00006" summary="admin">
+      <option name="closed" value="true" />
+      <created>1722801684323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722801684323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Database" />
+    <MESSAGE value="querySet" />
+    <MESSAGE value="MVT" />
+    <MESSAGE value="admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
